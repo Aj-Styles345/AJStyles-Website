@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="gan.css">
+  <title>HTML</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  
+</head>
+<div class="wrapper">
+  <selection class="all">
+    <article class="body-all">
+      <div class="body-list">
+        <dl>
+          <dt><big><b>What is <span>HTML</b></span></big></dt>
+          <dd>To understand "HTML" from font to back, let's look at each word that makes up the abbreviation:
+          <dd><b>Hypertext:</b> text (often with embeds such as images, too) that is organizee in orderto connect related items.</dd>
+          <dd><b>Markup:</b> A style guide for typeseeting anything to be printed in an hardcopy or soft copy format.</dd>
+          <dd><b>Language:</b>A Language that a computer system understands and uses to interpret commands.</dd>
+          
+          <dd>Html determines the structure of pages. The structure alone is not enough to make a web page look good and interactives. 
+          So you'll use assisted technologies such as CSS and Javascript to make your HTML beautiful and add interactively, respectively. in this case, br I like to break down the three technologies - HTML, CSS, and Javascript this way: they are like a human body.
+          You can also look at HTML, CSS, Javascriptthis way: HTML is the structure of a house, CSS is the interior and exterior decor, and Javascript is the electricity, water system, and many other functional features that make the house livable</dd>
+        </dl>
+      </div>
+      <ol>
+        <li>HTML is thr skeleton</li>
+        <li>CSS is the skin</li>
+        <li>Javascript is the circulatory, digestive, and resiratory systems that brings the structure and the skin to life.</li>
+      </ol>
+    </article>
+  </selection>
+</div>
+
+<style media="screen">
+  
+  .model-yama{
+    top: 30%;
+    left: 38%;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin: 10px 0 0 40px;
+    width: 1200px;
+    max-width:5000px;
+    position: fixed;
+    background: rgba(0,0,0,.3);
+  }
+  
+  
+  .model-yama .model {
+    height: 600px;
+    width: 800px;
+    margin: 0px 10px;
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  
+  .model-yama .model .fa-heart {
+    font-size: 200px;
+    color: #f9ca4e;
+    padding-bottom: 55px;
+    margin: 10px 0;
+    text-shadow: 0 4px 8px rgba(0,0,0,.3), 
+                50px 50px 0 #ccc, 
+                -50px 50px 0 #333;
+  }
+  
+  
+  .model-yama .model h3 {
+    color: #333;
+    font-size: 50px;
+  }
+  
+  .model-yama .model p {
+    color: #666;
+    font-size: 30px;
+    margin: 20px 0;
+  }
+  
+  
+  .model-yama .model button {
+    height: 35px;
+    width: 120px;
+    background: #000;
+    color: #fff;
+    border-spacing: 100px;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,.3);
+  }
+  
+  .model-yama .model button:hover{
+    opacity: .8;
+  }
+  
+  .model-yama .model .fa-times {
+    position: absolute;
+    top: 15px; 
+    right: 20px;
+    font-size: 35px;
+    cursor: pointer;
+    color: #333;
+    
+  }
+  
+  
+  
+</style>
+
+<div class="model-yama" id="modelyama">
+  <div class="model">
+    <i class="fa-solid fa-heart"></i>
+    <h3>Model Pop-up</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur.</p>
+    <button>OK</button>
+    <button>Cancel</button>
+    <i onclick="closebox()" class="fa-solid fa-times"></i>
+  </div>
+</div>
+<script>
+
+
+let modelyama = document.getElementById("modelyama");
+
+document.ontouchend = function() {
+  modelyama.style.display = "";
+}
+
+function closebox() {
+  modelyama.style.display = "none";
+
+}
+
+</script>
+
+<br>
+<br>
+<div class="wrapper">
+  <section class="tags">
+    <article class="body-tags">
+      <div class="tag-list">
+        <h2><span>HTML</span> TAGS: </h2>
+        <p>Since HTML defines the markup for a oarticlar web page, you'll want the text, images, or other embeds to appear incertain ways.</p>
+        <p>For example, you might want some text to be small, and some rlto be bold, italic, ormatin bullet point form.
+        <br>
+        <br>
+        <iframe style="margin-left: 240px;" src="https://www.edge.com" scrolling="yes" width="900" height="390" ></iframe>
+        <br>
+        <br>
+        HTML has "tags" that let you get this done. So many, there are tags create headings, paragraph, bolded words, italicized, words and more.</p>
+        <br>
+        <br>
+        <h2>HTML <span>ELEMENTS</span></h2>
+        <p>An elment consists of the opening tags, a character, the content, and a closing tags. Some elements are empty - that is, they don't have a closing taf but instead have a sourceor link to content that you want to embed on the web page.
+        <br>
+        <br>
+        <iframe style="margin-left: 240px" src="https://www.bing.com" scrolling="yes" width="900" height="390"></iframe>
+        <br>
+        <br>
+        HTML elements are often used interchangeably with tags, but there's a small difference between the two. An elemnentis a combination if the opening and closing tags, and then the content between them, In tags. For example,
+        <a href="https://www.loc.gov/preservation/digital/formats/fdd/fdd000497.shtml">HTML 4.0</a>, <a href="https://www.w3.org/Markup/Wilbur/">HTML 3.2</a>, and so on. But now we no longer need it. when "HTML" is written in the code, the browser automatically assumes that you are coding in <a href="https://www.geeksforgeeks.org/html5-introduction/amp/">HTML 5.0</a>.
+        <br>
+        &lt;&lt;&lt;<a href="https://m.youtube.com/watch?v=KUMe1FH4CHE">for more on HTML</a>&gt;&gt;&gt;
+      </div>
+    </article>
+  </section>
+</div>
+
+<div class="cookiebug">
+  <div class="cookie"><img src="../images/uin.jpg" alt="cookies"><span>We value your privacy</span></div>
+  <p>We use cookies to enhance your browsing experience, serve personilized ads or content <command>analyse our traffic, By clicking "Accept All" your consent to our use of cookies.<a style="color: #fff; text-decoration: none"href="#">Cookie Policy</a></p>
+  <button class="accept">Accept all</button>
+  <button>Customize</button>
+  <button class="reject">Reject all</button>
+</div>
+<script>
+  setTimeout(()=>{
+    document.querySelector(".cookiebug").classList.add("appear");
+  }, 2000);
+  
+  document.querySelector(".reject").addEventListener("touchstart", e=>{
+    document.querySelector(".cookiebug").classList.remove("appear");
+  })
+  
+  
+  
+  
+</script>
+<body>
+  
+
+</body>
+
+</html>

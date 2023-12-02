@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="">
+  <title>Contact Me</title>
+  <style>
+  body {
+      width: 157%;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.5)100%, rgba(0, 0, 0, 0.5)100%), url("../images/img.jpeg");
+      background-size: cover;
+      background-position: center;
+  }
+  </style>
+</head>
+
+<body style="color: #fff">
+  <main>
+    <div class="wrapper">
+      <section class="contacts">
+        <article class="contact-all">
+          <div class="contact-list">
+            <h1 style="font-family: Times New Roman; font-size: 70px; text-align: center; background-color: black; color: whitesmoke; margin:  0">Contact Us</h1>
+          </div>
+          <br>
+          <br>
+          <div  style="font-family: anne;font-size: 45px"class="contact-table">
+            <form><a href="https://httpbin.org/post" method="post"></a>
+            <fieldset>
+              <legend>Personal Info:</legend>
+                <p>
+                  <label for="fname">First Name: </label>
+                  <input type="text" name="fname" id="fname" placeholder="john" autocomplete="on" required autofocus>
+                </p>
+                <p>
+                  <label for="lname">Last Name: </label>
+                  <input type="text" name="lname" id="lname" placeholder="Tom" autocomplete="on" required autofocus>
+                </p>
+                <p>
+                  <label for="surname">Surname</label>
+                  <input type="text" name="surname" id="surname" placeholder="Jodan" autocomplete="on" required autofocus>
+                </p>
+                <p>
+                  <label for="Phone">Phone Number</label>
+                  <input type="tel" name="phone" id="phone" placeholder="455735885" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" autocomplete="on" required autofocus>
+                </p>
+                <p>
+                  <label for="fmovie">Favourite Movies</label>
+                  <select name="Venom" id="Venom" multiple size="5">
+                    <optgroup label="Action Movies">
+                      <option value         ="Venom">Venom:     Let them be         Carnage           </option>
+                      <option value         ="ball"             >Ballerina        </option>
+                      <option value         ="ride">Rise of     the Super Heroes   </option>
+                      <option value         ="judge">Justice
+                        League
+                      </option>
+                      <option value         ="fair">Fair      Play</option>
+                  
+                    </optgrop>
+                    <optgroup label="Horror Movies">
+                      <option value="top">Morbius        </option>
+                      <option value="cream">Scream       </option>
+                      <option value="the">The Mummy      </option>
+                      <option value="men">Men</option>
+                    </optgroup>
+                    <option value="other">OTHERS</option>
+                  </select>
+                </p>
+              </form>
+            </fieldset>
+            <br>
+            <fieldset>
+              <legend>Favourite Foods</legend>
+              <p>
+                <input width="60" type="radio" name="food" id="Potatoes Chips" value="Potatoes Chips">
+                <label for="Potatoes Chips">Potatoes Chips</label>
+              </p>
+              <p>
+                <input type="radio" name="food" id="seafood">
+                <label for="seafood">Sea Food Paella</label>
+              </p>
+              <p>
+                <input type="radio" name="food" id="Tacos">
+                <label for="Tacos">Tacos</label>
+              </p>
+            </fieldset>
+            <br>
+            <fieldset>
+              <legend>Do you love Perts</legend>
+              <p>
+                <input type="checkbox" name="pets" value="cats">
+                <label for="cats">Cats</label>
+              </p>
+              <p>
+                <input type="checkbox" name="pets" value="dogs">
+                <label for="dogs">Dogs</label>
+              </p>
+              <p>
+                <input type="checkbox" name="fish" value="fish">
+                <label for="fish">Fish</label>
+              </p>
+              <p>
+                <input type="checkbox" name="others" value="others">
+                <label for="others">Others</label>
+              </p>
+            </fieldset>
+            <br>
+            <fieldset>
+              <label for="message">Your Messages</label>
+              <legend>Write your message here!</legend>
+              <br>
+              <textarea name="message" id="message" cols="80" rows="30"></textarea>
+            </fieldset>
+            <br>
+            <button style="background-color: black; color: red; border-radius: 8px; font-size: 50px"type="submit">Submit</button>
+            <button style="background-color: black; color: green; border-radius: 8px; font-size: 50px"type="reset">Reset</button>
+          </div>
+        </article>
+      </section>
+    </div>
+  </main>
+
+</body>
+
+</html>
